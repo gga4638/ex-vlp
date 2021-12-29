@@ -48,7 +48,6 @@ function reducer(state, action) {
       };
     case 'REMOVE_USER':
       return {
-        ...state,
         users: state.users.filter(user => user.id !== action.id)
       };
     default:
